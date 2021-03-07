@@ -13,6 +13,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
+import android.widget.Toast;
 
 
 import java.io.File;
@@ -31,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.recyclerView);
         arrayList = new ArrayList<>();
+
+       Toast.makeText(MainActivity.this,"HELLO WORLD!",Toast.LENGTH_LONG).show();
     }
 
     public void getStickers(){
